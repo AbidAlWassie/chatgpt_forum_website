@@ -1,42 +1,145 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
+  /* max-width: 1280px; */
+  /* text-align: center; */
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+}
+
+nav {
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+.hidden, .hide {
+  display: none !important;
+}
+
+/* Show the navigation menu when the "menu-open" class is present */
+nav.menu-open {
+  display: block;
+}
+
+.menu-btn {
+  display: none !important;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#create-post-dropdown {
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.623);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  z-index: 99;
+  height: 100% !important;
+  width: 100% !important;
+  z-index: 1;
+  /* display: none; */
+}
+
+
+/* Style the close button */
+
+#signup-form {
+  background-color: #555555;
+  margin: auto;
+  margin-top: 20em;
+  padding: 20px;
+  border: 1px solid #ddd;
+  width: 40%;
+  z-index: 999;
+}
+
+#login-form {
+  background-color: #555555;
+  margin: auto;
+  margin-top: 20em;
+  padding: 20px;
+  border: 1px solid #ddd;
+  width: 40%;
+  z-index: 999;
+}
+
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  padding: 20px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  /* Make header elements stack vertically on small screens */
+  header {
+      flex-direction: column;
+      align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  /* Hide the navigation menu on small screens */
+  nav {
+      display: none;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  /* Reduce font size on small screens */
+  body {
+      font-size: 14px;
   }
+
+  /* Use CSS to hide the navigation menu by default on small screens */
+  nav {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block !important;
+  }
+
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  /* Reduce font size on medium screens */
+  body {
+      font-size: 16px;
+  }
 }
