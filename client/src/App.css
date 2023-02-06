@@ -14,15 +14,15 @@ body {
 }
 
 header {
-  background-color: #333;
   padding: 20px;
   display: flex;
 }
 
-nav {
+/* nav {
   margin-left: 20px;
   margin-right: auto;
-}
+} */
+
 
 .hidden, .hide {
   display: none !important;
@@ -72,41 +72,21 @@ nav a {
 
 /* Style the close button */
 
-#signup-form {
-  background-color: #555555;
-  margin: auto;
-  margin-top: 20em;
-  padding: 20px;
-  border: 1px solid #ddd;
-  width: 40%;
-  z-index: 999;
-}
 
-#login-form {
-  background-color: #555555;
-  margin: auto;
-  margin-top: 20em;
-  padding: 20px;
-  border: 1px solid #ddd;
-  width: 40%;
-  z-index: 999;
-}
 
 main {
-  max-width: 1080px;
+  /* max-width: 1080px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px; */
 }
 
 section {
   margin-bottom: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #35465c;
   padding: 20px;
 }
 
 footer {
-  background-color: #333;
-  padding: 20px;
   text-align: center;
 }
 
