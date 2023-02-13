@@ -3,7 +3,7 @@ import "./Modal.css";
 
 function Modal({ setOpenModal }) {
   return (
-    <div className="modal" onClick={() => {setOpenModal(false);}}>
+    <div className="modal">
       <div id="signup-modal" className="modal">
         <form id="signup-form" className="">
           <h3>Signup</h3>
@@ -21,6 +21,7 @@ function Modal({ setOpenModal }) {
           <input type="submit" value="Sign up" />
         </form>
       </div>
+      <div className="overlay"></div>
     </div>
   );
 }
